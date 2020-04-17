@@ -24,6 +24,42 @@ div.form {
 	padding: 1% 1%;
 }
 
+div.clients {
+	display: grid;
+  height: auto;
+  grid-template-columns:  1fr ;
+  grid-template-rows: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	width: 100%;
+	justify-items: center;
+}
+
+div.footer {
+	display: grid;
+  height: auto;
+  grid-template-columns:  1fr ;
+  grid-template-rows: auto;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	justify-items: center;
+}
+
+i {
+	padding: 1%;
+	margin: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-items: center;
+}
+
+h1.bottom {
+	background-color: #4AFD14;
+	width: 100%;
+}
+
 div.nav button.mind {
 	font-style: italic;
 	font-family: Arial, Helvetica, sans-serif;
@@ -98,7 +134,7 @@ button.button {
 	padding: .5% 2%;
 	font-size: large;
 	font-family: Arial, Helvetica, sans-serif;
-
+	text-size: 33%;
 }
 
 button.button:hover {
@@ -109,6 +145,7 @@ button.button:hover {
 	transition: all 1s;
 	font-family: Arial, Helvetica, sans-serif;
 	padding: .5% 2%;
+	text-size: 33%;
 }
 
 img.image {
@@ -124,7 +161,9 @@ img.image {
 }
 
 div.iconbar {
-	justify-content: center;
+	justify-items: center;
 	display-content: center;
-
+	padding: 1%;
+	margin: 1%;
+	width: 100%;
 }

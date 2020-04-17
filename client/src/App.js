@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Route, Link, Switch} from 'react-router-dom'
 import {WithRouter} from 'react-router'
 import Nav from './components/nav'
-import Pic from './photos/learn-to-meditate.png'
 import Start from './components/GettingStarted'
 import Home from './components/home'
 import Clients from './components/Clients'
@@ -24,9 +23,9 @@ render() {
     <div className="App">
 			<Nav />
 			<img className="image" src="https://i.imgur.com/rbnbA5n.png" title="source: imgur.com" />
-			<hr />
+			<br />
 			<Clients />
-			<hr />
+			<br />
 			<Button />
 			<br />
 		<Switch>

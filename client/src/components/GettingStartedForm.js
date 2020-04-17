@@ -54,7 +54,7 @@ render(){
 			<hr />
 			<input placeholder="Message" name="message" value={this.state.message} onChange={this.handleChange}/>
 			</form>
-			<hr />
+			<br />
 			<button>Submit</button>
 		</div>
 			)
