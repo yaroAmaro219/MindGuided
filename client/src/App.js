@@ -7,6 +7,7 @@ import Start from './components/GettingStarted'
 import Home from './components/home'
 import Clients from './components/Clients'
 import Button from './components/Button'
+import Form from './components/GettingStartedForm'
 import './App.css';
 
 class App extends Component {
@@ -30,7 +31,6 @@ class App extends Component {
 			<Button />
 			<br />
 			<Start />
-    </div>
 		<Switch>
 		<Route exact path="/start" render={(props) => (
 			<Start
@@ -39,6 +39,8 @@ class App extends Component {
 				)}/>
 
 		</Switch>
+		<Form />
+    </div>
   );
 	
 }}
