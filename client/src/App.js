@@ -8,6 +8,7 @@ import Home from './components/home'
 import Clients from './components/Clients'
 import Button from './components/Button'
 import Form from './components/GettingStartedForm'
+import Footer from './components/Footer'
 import './App.css';
 
 class App extends Component {
@@ -18,9 +19,7 @@ class App extends Component {
 			}
 	}
 
-
-
-	render() {
+render() {
   return (
     <div className="App">
 			<Nav />
@@ -30,19 +29,17 @@ class App extends Component {
 			<hr />
 			<Button />
 			<br />
-			<Start />
 		<Switch>
 		<Route exact path="/start" render={(props) => (
 			<Start
-
 			/>
 				)}/>
-
 		</Switch>
 		<Form />
+		<Footer />
     </div>
   );
-	
-}}
+	}
+}
 
 export default App;

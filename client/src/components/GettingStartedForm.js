@@ -19,7 +19,7 @@ class GettingStartedForm extends Component {
 		const value = e.target.value;
 		this.setState({
 			...this.state,
-			[e.target.name]: value
+		[e.target.name]: value
 				})
 	}
 
@@ -30,6 +30,7 @@ class GettingStartedForm extends Component {
 	)
 	}
 render(){
+	console.log(this.state.name)
 	return(
 		<div className="form">
 		<h1>Get Started</h1>
@@ -39,14 +40,21 @@ render(){
 		<button>
 		skip this step and book now
 		</button>
+		<br />
 		<form>
-			<input placeholder="Name" value={this.state.name} onChange={this.handleChange}/>
-			<input placeholder="Company" value={this.state.company} onChange={this.handleChange}/>
-			<input placeholder="Email" value={this.state.email} onChange={this.handleChange}/>
-			<input placeholder="Phone" value={this.state.phone} onChange={this.handleChange}/>
-			<input placeholder="Address" value={this.state.address} onChange={this.handleChange}/>
-			<input placeholder="Message" value={this.state.message} onChange={this.handleChange}/>
+			<input placeholder="Name" name="name" value={this.state.name} onChange={this.handleChange}/>
+			<hr />
+			<input placeholder="Company" name="company" value={this.state.company} onChange={this.handleChange}/>
+			<hr />
+			<input placeholder="Email" name="email" value={this.state.email} onChange={this.handleChange}/>
+			<hr />
+			<input placeholder="Phone" name="phone" value={this.state.phone} onChange={this.handleChange}/>
+			<hr />
+			<input placeholder="Address" name="address" value={this.state.address} onChange={this.handleChange}/>
+			<hr />
+			<input placeholder="Message" name="message" value={this.state.message} onChange={this.handleChange}/>
 			</form>
+			<hr />
 			<button>Submit</button>
 		</div>
 			)
